@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[127]:
+# In[128]:
 
 
 import os
@@ -49,16 +49,4 @@ for folder in names_noSup:
         print ("Creation of the file pair failed")
     else:
         print ("Successfully created file pair")
-
-
-# In[126]:
-
-
-list(filter(lambda x:'_' in x, names_all))
-
-
-# In[ ]:
-
-
-
 
