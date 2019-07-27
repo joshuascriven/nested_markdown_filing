@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[100]:
+# In[127]:
 
 
 import os
@@ -25,7 +25,7 @@ for i,chapname in enumerate(names, start=1):
         secname = chapname+"_"+str(sec[0])+"_"+sec[1]
         names_all.append(secname)
     for s,ssec in enumerate(sup_sec, start=1):
-        ssecname = chapname+"_"+str(ssec)
+        ssecname = chapname+""+str(ssec)
         names_all.append(ssecname)
         
 folders = [Path(path0 +  "/" + s) for s in names_all]
@@ -38,7 +38,8 @@ for folder in folders:
     else:
         print ("Successfully created the directory %s" % folder)
 
-for folder in names_all:
+names_noSup = list(filter(lambda x:'_' in x, names_all))
+for folder in names_noSup:
     try:
         f1=open(Path(folder+"/"+folder+"_1_.md"), "a+")
         f1.write("# "+folder+" 1")
@@ -48,4 +49,16 @@ for folder in names_all:
         print ("Creation of the file pair failed")
     else:
         print ("Successfully created file pair")
+
+
+# In[126]:
+
+
+list(filter(lambda x:'_' in x, names_all))
+
+
+# In[ ]:
+
+
+
 
