@@ -21,13 +21,10 @@ names_all = []
 
 for i,chapname in enumerate(names, start=1):
     names_all.append(chapname)
-#     print(chapname)
     for n,sec in enumerate(zip(main_sec,sections), start=1):
-#         print(chapname+"_"+str(sec[0])+"_"+sec[1])
         secname = chapname+"_"+str(sec[0])+"_"+sec[1]
         names_all.append(secname)
     for s,ssec in enumerate(sup_sec, start=1):
-#         print(chapname+"_"+str(ssec))
         ssecname = chapname+"_"+str(ssec)
         names_all.append(ssecname)
         
