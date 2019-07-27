@@ -4,10 +4,10 @@ The included python script (`folder_structure.py`) is used to create a nested se
 ## Customization
 All major default customizations for the file-folder structure can be edited in lines 11-15 of `folder_structure.py`:
 
-    - `chapters` integer input indicating number of top-level folders (e.g., chapters)
-    - `chapter_prefix` string input for top-level folder prefix
-    - `sections` list of strings indicating names for major second-level folders (e.g., sections)
-    - `sup_sec` list of strings indicating names for minor second-level folders (e.g., drafts/supplementals)
+- `chapters` integer input indicating number of top-level folders (e.g., chapters)
+- `chapter_prefix` string input for top-level folder prefix
+- `sections` list of strings indicating names for major second-level folders (e.g., sections)
+- `sup_sec` list of strings indicating names for minor second-level folders (e.g., drafts/supplementals)
 
 ## Script Output
 
