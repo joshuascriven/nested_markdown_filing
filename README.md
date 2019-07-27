@@ -15,10 +15,14 @@ The structure produced by the python script is flat. That is, all folders and su
 
 Either the flattened or the nested file-folder setup works perfectly with my with my [nested_md_to_PDF](https://github.com/joshuascriven/nested_md_to_PDF/tree/master) tool to combine and compile markdown files from every folder into a combined PDF (while specifically ignoring `sup_sec` folder files). 
 
+### Flattened
+![Flattened](cfs_flat.png)
+
+### Nested
+![Nested](cfs_nested.png)
+
 ## Naming Convention
 Files and folders are named using underscores and numeral prefixes to maintain an order that corresponds across both flattened and nested setups. This convention allows for files to be sorted lexicographically for easy reading/editing using our file browser or importing into the [nested_md_to_PDF](https://github.com/joshuascriven/nested_md_to_PDF/tree/master) tool.
 
 ## `sup_sec` Folders
 For `sup_sec` folder files do not follow the convention explained above, and subsequently appear last in a name-sorted file browser window. Breaking the convention also allows these files to be ignored in the creation of placeholder markdown files created by `folder_structure.py` and ignored by the [nested_md_to_PDF](https://github.com/joshuascriven/nested_md_to_PDF/tree/master) tool. The effective violation of the convention is maintained by omitting the underscore "_" from the folder name, as in the default case.
-
-
