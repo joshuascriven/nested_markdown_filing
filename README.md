@@ -1,11 +1,5 @@
 # nested_markdown_filing
-The included python script (`folder_structure.py`) is used to create a nested set of folders containing markdown files, patterned after the sections of an academic paper. 
-
-In cmd or Terminal run:
-
-    python folder_structure.py 
-
-Alternatively, use may use the folders and files contained within the `nested_structure` directory as a ready-made option.
+The included python script (`folder_structure.py`) is used to create a nested set of folders containing markdown files, patterned after the sections of an academic paper. Alternatively, use may simply use the folder-file contained within the `nested_structure` directory.
 
 ## Customization
 All major default customizations for the file-folder structure can be edited in lines 11-15 of `folder_structure.py`:
