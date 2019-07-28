@@ -26,3 +26,7 @@ Files and folders are named using underscores and numeral prefixes to maintain a
 
 ## `sup_sec` Folders
 For `sup_sec` folder files do not follow the convention explained above, and subsequently appear last in a name-sorted file browser window. Breaking the convention also allows these files to be ignored in the creation of placeholder markdown files created by `folder_structure.py` and ignored by the [nested_md_to_PDF](https://github.com/joshuascriven/nested_md_to_PDF/tree/master) tool. The effective violation of the convention is maintained by omitting the underscore "_" from the folder name, as in the default case.
+
+## `chapters` Folders
+The chapter folders are created without underscores by default, remember to add at least a single underscore somewhere in the chapter name if you intend to use the [nested_md_to_PDF](https://github.com/joshuascriven/nested_md_to_PDF/tree/master) tool.
+
