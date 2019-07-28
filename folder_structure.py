@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[128]:
+# In[5]:
 
 
 import os
@@ -11,7 +11,7 @@ path0 = os.getcwd()
 # Inputs
 chapters = 5
 chapter_prefix = "C"
-sections = ["Introduction", "Theory", "Research design", "Results", "Discussion"]
+sections = ["Introduction", "Theory", "Research_design", "Results", "Discussion"]
 sup_sec = ["Notes", "Figs", "Other", "Drafts"]
 
 # Magic
@@ -34,9 +34,9 @@ for folder in folders:
     try:
         os.mkdir(folder)
     except OSError:
-        print ("Creation of the directory %s failed" % folder)
+        print ("Creation of the directory failed")
     else:
-        print ("Successfully created the directory %s" % folder)
+        print ("Successfully created the directory")
 
 names_noSup = list(filter(lambda x:'_' in x, names_all))
 for folder in names_noSup:
@@ -49,4 +49,10 @@ for folder in names_noSup:
         print ("Creation of the file pair failed")
     else:
         print ("Successfully created file pair")
+
+
+# In[ ]:
+
+
+
 
